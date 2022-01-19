@@ -4,6 +4,8 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
+//this is where we set the getters and setters for the inputs on my form and we validate the inputs
+
 namespace Mission_2.Models
 {
     public class grade_calc_model

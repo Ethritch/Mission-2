@@ -2,13 +2,14 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
+    ViewData["Title"] = "Grade Calculator";
 }
 
 @model grade_calc_model;
 
 <!--The form is meant to calculate your final grade in the class-->
-<h2>Calulate your final Grade</h2>
-<p class="form_p">(input percentages in decimal form)</p>
+<center><h2>Calulate your final Grade</h2></center>
+<center><p class="form_p">(input percentages in decimal form)</p></center>
 <form method="post">
     <label>Assignments</label>
     <input id="assignment" asp-for="assignment" /> <br />
@@ -27,4 +28,3 @@
 </form>
 
 
-<script src="/js/default.js"></script>
