@@ -1,0 +1,30 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@model grade_calc_model;
+
+<!--The form is meant to calculate your final grade in the class-->
+<h2>Calulate your final Grade</h2>
+<p class="form_p">(input percentages in decimal form)</p>
+<form method="post">
+    <label>Assignments</label>
+    <input id="assignment" asp-for="assignment" /> <br />
+    <label>Group Project</label>
+    <input id="gp" asp-for="gp" /> <br />
+    <label>Quizzes</label>
+    <input id="quiz" asp-for="qz" /> <br />
+    <label>Exams</label>
+    <input id="exam" asp-for="exam" /> <br />
+    <label>INTEX</label>
+    <input id="intex" asp-for="intex" />
+    <br />
+    <input class="calc" id="calc" type="submit" value="Calculate" />
+
+    <div asp-validation-summary="All"></div>
+</form>
+
+
+<script src="/js/default.js"></script>
